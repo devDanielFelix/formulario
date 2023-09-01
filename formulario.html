@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TestForms</title>
+  </head>
+  <body>
+    <main>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Cadastro</legend>
+
+          <label for="nome">Nome</label><br />
+          <input
+            type="text"
+            name="Nome"
+            id="Nome"
+            style="width: 215px"
+          /><br /><br />
+
+          <label for="email">Email</label><br />
+          <input
+            type="text"
+            name="Email"
+            id="Email"
+            style="width: 215px"
+          /><br /><br />
+
+          <label for="idade">Idade</label>
+          <input
+            type="number"
+            name="idade"
+            id="Idade"
+            style="width: 38px"
+            min="18"
+          /><br /><br />
+
+          <label>Data de Nascimento</label>
+          <input type="date" name="date" width="124px" /><br /><br />
+
+          <div>
+            <label>Possui conta?</label><br />
+            <input type="checkbox" name="conta" id="Instagram" />
+            <label for="Instagram">Instagram</label>
+            <input type="checkbox" name="conta" id="Facebook" />
+            <label for="Facebook">Facebook</label>
+            <input type="checkbox" name="conta" id="X" />
+            <label for="X">X</label><br /><br />
+          </div>
+
+          <div><label>Sexo</label><br /></div>
+
+          <div>
+            <input type="radio" id="Masculino" name="Sexo" />
+            <label for="Masculino">Masculino</label>
+            <input type="radio" id="Feminino" name="Sexo" />
+            <label for="Feminino">Feminino</label>
+            <input type="radio" id="Outro" name="Sexo" />
+            <label for="Outro">Outro</label><br /><br />
+          </div>
+
+          <div>
+            <label>Cor Favorita</label><br />
+            <input type="color" name="Cor" /><br /><br />
+
+            <label for="bio">Biografia</label><br />
+            <textarea name="bio" id="bio" cols="33" rows="5"></textarea
+            ><br /><br />
+
+            <form method="POST" enctype="multipart/form-data">
+              <label>Foto de Perfil</label>
+              <input
+                type="file"
+                accept="image/*"
+                multiple
+                name="imagem"
+              /><br /><br />
+            </form>
+
+            <label for="tele">Telefone</label>
+            <input
+              type="tel"
+              name="tel"
+              maxlength="15"
+              minlength="1"
+              id="tele"
+            /><br /><br />
+
+            <label for="Face">Link do Facebook</label><br />
+            <input type="url" name="Link" id="Face" />
+
+            <label for="Senha">Senha</label>
+            <input
+              type="password"
+              name="Senha"
+              maxlength="8"
+              minlength="6"
+              id="Senha"
+            /><br /><br />
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
